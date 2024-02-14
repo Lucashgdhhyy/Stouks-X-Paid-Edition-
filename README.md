@@ -33,20 +33,22 @@ local Tab = Window:MakeTab({
 	Name = "Combat",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
-})Tab:AddButton({
-	Name = "Button!",
-	Callback = function()                OrionLib:MakeNotification({
+})
+
+Tab:AddButton({
+	Name = "Auto Parry 99%",
+	Callback = function()               OrionLib:MakeNotification({
 		Name = "Executado",
 		Content = "Obrigado por escolher o Stouks X",
 		Image = "rbxassetid://4483345998",
 		Time = 5
-	})/
+	})
       		print("You are good for select hosvile")                   getgenv().config = getgenv().config or {
-				hit_time = 0.75, -- // recommended 0.25 to 0.75 \\ --
+				hit_time = 0.7, -- // recommended 0.25 to 0.75 \\ --
 				
 				mode = 'Always', -- // Hold , Toggle , Always \\ --
 				deflect_type = 'Remote', -- // Key Press , Remote \\ --
-				notifications = true,
+				notifications = true,5
 				keybind = Enum.KeyCode.V
 			   }
 			   loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
@@ -123,8 +125,8 @@ Tab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		print(Value)                 OrionLib:MakeNotification({
-			Name = "Espera essa funçao nao esta pronta volte mais tarde",
-			Content = "Esta funçao foi desenvolvida 1% ainda",
+			Name = "Espera nossa segurança detectou algo",
+			Content = "Espere o evento começar para pegar o premium",
 			Image = "rbxassetid://4483345998",
 			Time = 5
 		})
