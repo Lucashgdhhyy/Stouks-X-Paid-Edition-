@@ -18,7 +18,7 @@ Tab:AddParagraph("Aviso","Digite o link abaixo no navegador:D para entrar no ser
 Tab:AddButton({
 	Name = "https://discord.gg/wn9sxQymcp",
 	Callback = function()                       OrionLib:MakeNotification({
-		Name = "Error 21
+		Name = "Error 134",
 		Content = "O link nao pode ser copíado digite manualmente",
 		Image = "rbxassetid://4483345998",
 		Time = 5
@@ -36,14 +36,15 @@ local Tab = Window:MakeTab({
 })
   
 Tab:AddButton({
-	Name = "Auto Parry 99%",
-	Callback = function()                      OrionLib:MakeNotification({
+	Name = "Auto Parry 100%",
+	Callback = function()               OrionLib:MakeNotification({
 		Name = "Executado",
 		Content = "Obrigado por escolher o Stouks X",
 		Image = "rbxassetid://4483345998",
 		Time = 5
+	})                   
       		print("button pressed")                getgenv().config = getgenv().config or {
-				hit_time = 0.80, -- // recommended 0.25 to 0.75 \\ --
+				hit_time = 0.85, -- // recommended 0.25 to 0.75 \\ --
 				
 				mode = 'Always', -- // Hold , Toggle , Always \\ --
 				deflect_type = 'Remote', -- // Key Press , Remote \\ --
