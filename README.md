@@ -125,8 +125,8 @@ Tab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		print(Value)                 OrionLib:MakeNotification({
-			Name = "Espera nossa segurança detectou algo",
-			Content = "Espere o evento começar para pegar o premium",
+			Name = "Espera essa funçao nao esta pronta volte mais tarde",
+			Content = "Esta funçao foi desenvolvida 1% ainda",
 			Image = "rbxassetid://4483345998",
 			Time = 5
 		})
