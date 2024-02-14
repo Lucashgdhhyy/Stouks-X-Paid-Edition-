@@ -36,7 +36,7 @@ local Tab = Window:MakeTab({
 })
   
 Tab:AddButton({
-	Name = "Auto Parry 100%",
+	Name = "Auto Parry 95%",
 	Callback = function()               OrionLib:MakeNotification({
 		Name = "Executado",
 		Content = "Obrigado por escolher o Stouks X",
@@ -44,7 +44,7 @@ Tab:AddButton({
 		Time = 5
 	})                   
       		print("button pressed")                getgenv().config = getgenv().config or {
-				hit_time = 1.60, -- // recommended 0.25 to 0.75 \\ --
+				hit_time = 0.68, -- // recommended 0.25 to 0.75 \\ --
 				
 				mode = 'Always', -- // Hold , Toggle , Always \\ --
 				deflect_type = 'Remote', -- // Key Press , Remote \\ --
@@ -55,6 +55,19 @@ Tab:AddButton({
 			   loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
   	end    
 })
+
+Tab:AddButton({
+	Name = "Auto Spam",
+	Callback = function()               OrionLib:MakeNotification({
+		Name = "Executado",
+		Content = "Obrigado por escolher o Stouks X",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})                   
+      		print("button pressed")                loadstring(game:HttpGet("https://pastebin.com/raw/t2391h1A"))()
+  	end    
+})
+
 
 Tab:AddButton({
 	Name = "Mobile Spam Button",
@@ -86,7 +99,7 @@ Tab:AddButton({
 			end
 			
 			local function showNotification()
-				game.StarterGui:SetCore("SendNotification", {Title = "Active or Desabilited", Text = "Made By Stouks X", Duration = 1})
+				game.StarterGui:SetCore("SendNotification", {Title = "", Text = "Made By Stouks X", Duration = 1})
 			end
 			
 			button.MouseButton1Click:Connect(function()
