@@ -33,17 +33,14 @@ local Tab = Window:MakeTab({
 	Name = "Combat",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
-})
-Tab:AddToggle({
-	Name = "Auto pary 100%",
-	Default = false,
-	Callback = function(Value)     
-		print(Value)                OrionLib:MakeNotification({
+})Tab:AddButton({
+	Name = "Button!",
+	Callback = function()                OrionLib:MakeNotification({
 		Name = "Executado",
 		Content = "Obrigado por escolher o Stouks X",
 		Image = "rbxassetid://4483345998",
 		Time = 5
-	})
+	})/
       		print("You are good for select hosvile")                   getgenv().config = getgenv().config or {
 				hit_time = 0.75, -- // recommended 0.25 to 0.75 \\ --
 				
