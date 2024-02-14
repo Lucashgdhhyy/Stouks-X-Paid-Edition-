@@ -18,7 +18,7 @@ Tab:AddParagraph("Aviso","Digite o link abaixo no navegador:D para entrar no ser
 Tab:AddButton({
 	Name = "https://discord.gg/wn9sxQymcp",
 	Callback = function()                       OrionLib:MakeNotification({
-		Name = "Error 134",
+		Name = "Error 21
 		Content = "O link nao pode ser copíado digite manualmente",
 		Image = "rbxassetid://4483345998",
 		Time = 5
@@ -43,7 +43,7 @@ Tab:AddButton({
 		Image = "rbxassetid://4483345998",
 		Time = 5
       		print("button pressed")                getgenv().config = getgenv().config or {
-				hit_time = 0.74, -- // recommended 0.25 to 0.75 \\ --
+				hit_time = 0.80, -- // recommended 0.25 to 0.75 \\ --
 				
 				mode = 'Always', -- // Hold , Toggle , Always \\ --
 				deflect_type = 'Remote', -- // Key Press , Remote \\ --
