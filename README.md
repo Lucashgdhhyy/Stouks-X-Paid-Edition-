@@ -44,7 +44,7 @@ Tab:AddButton({
 		Time = 5
 	})                   
       		print("button pressed")                getgenv().config = getgenv().config or {
-				hit_time = 0.85, -- // recommended 0.25 to 0.75 \\ --
+				hit_time = 1.60, -- // recommended 0.25 to 0.75 \\ --
 				
 				mode = 'Always', -- // Hold , Toggle , Always \\ --
 				deflect_type = 'Remote', -- // Key Press , Remote \\ --
