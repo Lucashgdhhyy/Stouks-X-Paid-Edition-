@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Stouks X [Versão Premium]", HidePremium = false, SaveConfig = false, ConfigFolder = "Blade Ball"})
+local Window = OrionLib:MakeWindow({Name = "Stouks X [Blade Ball]", HidePremium = false, SaveConfig = false, ConfigFolder = "Blade Ball","Ninja Legends"})
 local Tab = Window:MakeTab({
 	Name = "Discord",
 	Icon = "rbxassetid://4483345998",
@@ -36,24 +36,13 @@ local Tab = Window:MakeTab({
 })
   
 Tab:AddButton({
-	Name = "Auto Parry 95%",
+	Name = "Auto Parry 99%",
 	Callback = function()               OrionLib:MakeNotification({
 		Name = "Executado",
 		Content = "Obrigado por escolher o Stouks X",
 		Image = "rbxassetid://4483345998",
 		Time = 5
-	})                   
-      		print("button pressed")                getgenv().config = getgenv().config or {
-				hit_time = 0.68, -- // recommended 0.25 to 0.75 \\ --
-				
-				mode = 'Always', -- // Hold , Toggle , Always \\ --
-				deflect_type = 'Remote', -- // Key Press , Remote \\ --
-				notifications = true,
-				keybind = Enum.KeyCode.V
-			   }
-			   
-			   loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
-  	end    
+	})                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20v2.0.0",true))()
 })
 
 Tab:AddButton({
@@ -147,6 +136,20 @@ Tab:AddToggle({
 		
 	end    
 })
+
+local Tab = Window:MakeTab({
+	Name = "Outros scripts nossos",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Ninja Legends",
+	Callback = function()
+      		print("button pressed")                 
+  	end    
+})
+
 
 --[[
 
